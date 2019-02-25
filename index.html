@@ -33,6 +33,17 @@ body, html {
   top: 8px;
   left: 16px;
 }
+.bottom-middle-title {
+  position: absolute;
+  bottom: 8px;
+  left: 20%;
+  /*transform: translate(-50%, -50%);*/
+}
+.bottom-middle-text {
+  position: absolute;
+  bottom: 8px;
+  left: 2%;
+}
 
 * {box-sizing: border-box}
 .mySlides1, .mySlides2 {display: none}
@@ -74,6 +85,12 @@ img {vertical-align: middle;}
 }
 
 </style>
+
+<script>
+function myFunction() {
+  alert("Aqui iremos al documental");
+}
+</script>
 
 <body>
 
@@ -164,21 +181,21 @@ TELEPRISIÓN CARABANCHEL  adopta el punto de vista de los olvidados, los perdedo
       <div class="mySlides">
         <img src="images/anochecer.jpg" alt="Anochecer " style="width:100%;max-height: 600px;">
             <div class="w3-left w3-text-white" style="padding-top:10%; padding-left:5%">
-                <span class="w3-jumbo w3-hide-small top-left">Teleprision Carabanchel </span>
+                <span class="w3-jumbo w3-hide-small bottom-middle-title">Teleprision Carabanchel </span>
             </div>
       </div>
 
       <div class="mySlides">
-        <img src="images/aerea.jpg" alt="Aerea " style="width:100%">
+        <img src="images/anochecer.jpg" alt="Aerea " style="width:100%">
             <div class="w3-left w3-text-white" style="padding-top:10%; padding-left:5%">
-                <span style="background-color:black; font-size:20px" class="top-left">
+                <span style="background-color:black; font-size:20px" class="bottom-middle-text">
                 <i>La cárcel de Carabanchel en Madrid que entre los años 1940 y  1960 encerraba a presos políticos del régimen del general Franco, en 1985 expresa la tragedia de la ilegalización de las drogas y su extensión masiva en la sociedad española. </i></span>
             </div>
       </div>
       <div class="mySlides">
-        <img src="images/basura.jpg" alt="basura " style="width:100%;">
+        <img src="images/anochecer.jpg" alt="basura " style="width:100%;">
         <div class="w3-left w3-text-white" style="padding-top:10%; padding-left:5%">
-            <span style="background-color:black; font-size:20px" class="top-left">
+            <span style="background-color:black; font-size:20px" class="bottom-middle-text">
             <i>La cárcel se ha quedado pequeña para tanto preso. Concebida para unos 800 reclusos, la media de ocupación en esos años es de 2.000 a 2.300. </i></span>
         </div>
       </div>
@@ -206,14 +223,14 @@ TELEPRISIÓN CARABANCHEL  adopta el punto de vista de los olvidados, los perdedo
       <div class="mySlides">
         <img src="images/cierre.jpg" alt="Director " style="width:100%;"/>
       </div>
-      
+      <!--
       <div class="mySlides">
         <img src="images/galeria.jpg" alt="Director " style="width:100%;"/>
       </div>
       
       <div class="mySlides">
         <img src="images/grabacion.jpg" alt="Director " style="width:100%;"/>
-      </div>
+      </div>-->
       
       <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
       <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
@@ -221,12 +238,33 @@ TELEPRISIÓN CARABANCHEL  adopta el punto de vista de los olvidados, los perdedo
     </div> 
 </div>
   
- <div class="w3-container w3-light-grey" id="documentales">
+ <div class="w3-container w3-white" id="documentales">
     <div class="w3-row-padding">
       <h2 style="padding-bottom:2%">Documentales</h2>
-    <p>
-    Por hacer
-    </p>
+    <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-card" align="center">
+        <img src="images/historias2.jpg" alt="Historias de la teleprision" style="width:80%">
+        <div class="w3-container">
+          <h3>Historias de la Teleprision</h3>
+          <p class="w3-opacity">Subtitulo</p>
+          <p>Aqui va un resumen</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="myFunction()"></i> Ver documental</button></p>
+          <!-- onclick="window.location.href='http://dgarijo.com'"-->
+        </div>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-card" align="center">
+        <img src="images/historias2.jpg" alt="Historias de la teleprision" style="width:80%">
+        <div class="w3-container">
+          <h3>Historias de la Teleprision 2</h3>
+          <p class="w3-opacity">Subtitulo 2</p>
+          <p>Aqui va un resumen del otro documental</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="myFunction()"></i> Ver documental</button></p>
+        </div>
+      </div>
+    </div>
     <br/>
     </div> 
 </div>  
